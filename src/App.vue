@@ -10,7 +10,7 @@ export default {
   name: 'app',
   data () {
     return {
-      title: 'Welcome to Your helloi'
+      title: 'Welcome to Your First Vue Project'
     }
   }
 

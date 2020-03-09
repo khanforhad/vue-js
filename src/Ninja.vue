@@ -13,7 +13,7 @@ export default {
   name: 'app',
   data () {
     return {
-      ninjas: ['Forhad','Afsana','Afsar']
+      ninjas: ['Forhad','Afsana','Afsar','Robin']
     }
   }
 
