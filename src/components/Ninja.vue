@@ -6,6 +6,7 @@
           <h3 v-show="ninja.show">{{ninja.speciality}}</h3>
       </li>
   </ul>
+  <button v-on:click="deleteNinja">Delete Ninja</button>
 </div>
 </template>
 
@@ -45,6 +46,30 @@ export default {
   data () {
     return {
     }
+  },
+  methods:{
+    deleteNinja:function(){
+      this.ninjas.pop();
+    }
+  },
+  //Lifecycle Hook
+  beforeCreate(){
+    alert('Before Created');
+  },
+  created(){
+    alert('Created');
+  },
+  beforeMount(){
+    alert('Before Mount');
+  },
+  mounted(){
+    alert('Mounted');
+  },
+  beforeUpdate(){
+    alert('Before updated');
+  },
+  updated(){
+    alert('Updated');
   }
 
 }

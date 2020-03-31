@@ -1,8 +1,7 @@
 <template>
 <div>
-  <app-header></app-header>
-  <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
-  <app-footer></app-footer>
+  <!-- <add-blog></add-blog> -->
+  <show-blogs></show-blogs>
 </div>
 </template>
 
@@ -11,28 +10,19 @@
 </style>
 
 <script>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
-import Ninjas from './components/Ninja.vue';
-
+import addBlog from './components/addBlog.vue'
+import showBlogs from './components/showBlogs.vue'
 export default {
   components:{
-    'app-header':Header,
-    'app-footer':Footer,
-    'app-ninjas':Ninjas,
+    'add-blog':addBlog,
+    'show-blogs':showBlogs
   },
-  name: 'app',
   data () {
     return {
-      ninjas:[
-          {name:'Forhad', speciality:'Vue Js', show:false},
-          {name:'Robin', speciality:'Doctor', show:false},
-          {name:'Mishu', speciality:'Mathmitics', show:false},
-          {name:'Afsana', speciality:'Writer', show:false},
-          {name:'Sumon', speciality:'Artiest', show:false},
-          {name:'Jamal', speciality:'Dancer', show:false}
-      ]
-    }
+    }  
+  },
+  methods:{
+    
   }
 
 }
